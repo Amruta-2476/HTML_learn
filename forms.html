@@ -1,0 +1,87 @@
+<!-- FORMS = An HTML form is used to collect user input. The user input is most often sent to a server for processing.-->
+<!--<form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <h4>THIS IS HTML FORMS TUTORIAL</h4>
+    <p>HTML form is used to collect user input. The user input is sent to a server for processing.
+    </p>
+
+    <hr>
+    <!--action: we use a backend right. You'll give ur user filled form to the backend. suppose php is ur backend then ...so go to backend.php and submit data there-->
+    <form action="backend.php">
+        First Name:<br> <input type="text">
+        <br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <!--input tag which is inside form tag can provide: single-line text I/P field box  "text",
+        radio buttons for 1 choice  "radio", 
+        checkbox for 1/more choices  "checkbox", 
+        a submit button  "submit",
+        a clickable button  "button"
+        also date-->
+
+        <!--instead of printing on new line using br we can use ** <DIV> TAG**= brings division = it is block element-->
+        <br>
+        <div>
+            Gender:
+            <br><input type="radio" name="gen" id="male">
+            <label for="male">MALE</label>
+            <br><input type="radio" name="gen" id="female">
+            <label for="female">FEMALE</label>
+            <br><input type="radio" name="gen" id="other">
+            <label for="male">OTHER</label>
+        </div> <!--name = is the way the backened will understand that tag-->
+
+        <br>
+        <div>
+            Vehicle/s you own:<br>
+            <input type="checkbox" name="vehicle" id="bike">
+            <label for="bike">I have a bike</label><br>
+            <input type="checkbox" name="vehicle" id="car">
+            <label for="car">I have a car</label><br>
+            <input type="checkbox" name="vehicle" id="pvt jet">
+            <label for="pvt jet">I have a pvt jet</label><br>
+        </div>
+
+        <br>
+        Date: <input type="date" name="date"> <br>
+
+        <br>
+        Age: <input type="number" name="age"> <br>
+
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="30" rows="5"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="color">FAVOURITE COLOR</label>
+            <select name="myColor" id="color">
+                <option value="red">Red</option>
+                <option value="ylw">Yellow</option>
+                <option value="grn">Green</option>
+            </select>
+        </div>
+
+
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Resest everything">
+        </div>
+    </form> <!--also has email and number as input-->
+</body>
+<!-- RESET BUTTON TOO -->
+
+</html>
+
+<label for="name_should_be_same">NAMEEEE</label>
+<input type="text" id="name_should_be_same"> <!--this should be same as label, so it can work with label
